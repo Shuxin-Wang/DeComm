@@ -1,0 +1,46 @@
+# --- PTDE specific parameters ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 100000
+
+batch_size_run: 8
+buffer_size: 5000
+batch_size: 128
+optimizer: 'adam'
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+mac: "n_ptde_mac"
+agent: "ptde_rnn"
+agent_output_type: q
+
+learner: "ptde_learner"
+mixer: "vdn"
+lr: 0.001
+td_lambda: 0.6
+optimizer: 'adam'
+q_lambda: False
+
+use_layer_norm: False
+
+use_orthogonal: False
+gain: 0.01
+
+use_per: False
+per_alpha: 0.6
+per_beta: 0.4
+return_priority: False
+
+name: "vdn_ptde"
+
+z_dims: 64
+high_hyper_hidden_dims: 64
+high_mixer_hidden_dims: 32
+two_hyper_layers: True
+var_floor: 0.01
+lambda_kl: 0.1
+
