@@ -7,7 +7,7 @@ This is an official implementation of paper *DeComm: Decoupling Communication in
 Communication is a powerful mechanism for enhancing coordination in Multi-Agent Reinforcement Learning (MARL) under the Centralized Training and Decentralized Execution (CTDE) framework. However, existing methods often suffer from the rigid message aggregation and fixed functional dependencies, which fail to adapt to varing communication constraints under real-world scenarios. To address these issues, we propose **DeComm**, a novel framework that decouples communication from local policy execution. Unlike traditional architectures that rely on fixed aggregation patterns, DeComm introduces a modular cross-attention extension, which can be jointly optimized during training and selectively activated during deployment without retraining. Furthermore, we incorporate a value-weighted agent selection and message quantization mechanism to minimize overhead while preserving critical information. Experimental results demonstrate that DeComm significantly improves task success rates and communication resilience compared to existing baselines under communication-constrained scenarios.
 
 <div align="center">
-  <img src="framework.png" alt="DeComm Framework" width="600"/>
+  <img src="framework.png" alt="DeComm Framework" width="800"/>
   <p>Figure 1: Architecture comparison with the DeComm framework</p>
 </div>
 
