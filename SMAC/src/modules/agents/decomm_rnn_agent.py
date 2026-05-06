@@ -4,9 +4,9 @@ import torch.nn.functional as F
 from modules.layers.cross_atten import CrossAttention
 
 
-class FlecommRNNAgent(nn.Module):
+class DecommRNNAgent(nn.Module):
     def __init__(self, input_shape, args):
-        super(FlecommRNNAgent, self).__init__()
+        super(DecommRNNAgent, self).__init__()
         self.args = args
 
         self.n_agents = self.args.n_agents
